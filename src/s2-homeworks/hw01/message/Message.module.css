@@ -1,0 +1,44 @@
+.message {
+    width: 400px;
+    background: #cc9c00;
+
+    padding: 10px;
+}
+
+.imageAndText {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.imageAndText img {
+    width: 100px;
+}
+
+.text {
+
+    padding: 10px;
+    background: black;
+    border-radius: 5px;
+}
+
+.text:after {
+
+}
+
+.name {
+    font-size: 15px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.messageText {
+    font-size: 15px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.time {
+    text-align: right;
+}

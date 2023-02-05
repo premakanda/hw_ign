@@ -1,0 +1,24 @@
+.input:focus {
+}
+
+.input {
+    border: 3px solid blue;
+}
+
+.inputWrapper {
+}
+
+.superInput {
+    border: 3px solid yellow;
+
+}
+
+.errorInput {
+    border: 3px solid red;
+}
+
+.errorInput:focus {
+}
+
+.error {
+}

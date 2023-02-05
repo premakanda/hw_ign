@@ -1,0 +1,39 @@
+.button {
+}
+
+.disabled {
+    background: gray;
+}
+
+.secondary {
+}
+
+.default {
+    background: inherit;
+}
+
+.red {
+    background: red;
+}
+
+.default:hover {
+}
+
+.red:hover {
+}
+
+.secondary:hover {
+}
+
+
+.default:active {
+}
+
+.secondary:active {
+}
+
+.red:active {
+}
+
+.button:disabled {
+}
