@@ -10,7 +10,7 @@ function App() {
         <div className={s.App}>
             {/*<HW1/>*/}
 
-            {/*<HW2/>*/}
+            <HW2/>
             <HW3/>
             {/*<HW4/>*/}
 
