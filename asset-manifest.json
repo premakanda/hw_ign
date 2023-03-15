@@ -1,17 +1,15 @@
 {
   "files": {
-    "main.css": "/hw_ign/static/css/main.bd36d2e6.css",
-    "main.js": "/hw_ign/static/js/main.2ca04dc0.js",
+    "main.css": "/hw_ign/static/css/main.27e7dacf.css",
+    "main.js": "/hw_ign/static/js/main.3dc76c46.js",
     "static/js/787.66cb4309.chunk.js": "/hw_ign/static/js/787.66cb4309.chunk.js",
-    "static/media/avatar.png": "/hw_ign/static/media/avatar.d947cb9d0d13765666b6.png",
-    "static/media/checked.svg": "/hw_ign/static/media/checked.b75ca55e8759862b4083.svg",
     "index.html": "/hw_ign/index.html",
-    "main.bd36d2e6.css.map": "/hw_ign/static/css/main.bd36d2e6.css.map",
-    "main.2ca04dc0.js.map": "/hw_ign/static/js/main.2ca04dc0.js.map",
+    "main.27e7dacf.css.map": "/hw_ign/static/css/main.27e7dacf.css.map",
+    "main.3dc76c46.js.map": "/hw_ign/static/js/main.3dc76c46.js.map",
     "787.66cb4309.chunk.js.map": "/hw_ign/static/js/787.66cb4309.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.bd36d2e6.css",
-    "static/js/main.2ca04dc0.js"
+    "static/css/main.27e7dacf.css",
+    "static/js/main.3dc76c46.js"
   ]
 }
