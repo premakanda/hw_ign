@@ -10,11 +10,12 @@
 
 .superInput {
     border: 3px solid yellow;
-
+    background: green;
 }
 
 .errorInput {
     border: 3px solid red;
+    background: red;
 }
 
 .errorInput:focus {

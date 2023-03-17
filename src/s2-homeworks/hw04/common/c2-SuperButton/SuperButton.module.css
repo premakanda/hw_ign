@@ -6,6 +6,7 @@
 }
 
 .secondary {
+    background: green;
 }
 
 .default {
@@ -36,4 +37,5 @@
 }
 
 .button:disabled {
+
 }
