@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/hw_ign/static/css/main.735dbb17.css",
-    "main.js": "/hw_ign/static/js/main.3b042009.js",
+    "main.js": "/hw_ign/static/js/main.1ec265f2.js",
     "static/js/787.66cb4309.chunk.js": "/hw_ign/static/js/787.66cb4309.chunk.js",
     "static/media/checked.svg": "/hw_ign/static/media/checked.b75ca55e8759862b4083.svg",
     "index.html": "/hw_ign/index.html",
     "main.735dbb17.css.map": "/hw_ign/static/css/main.735dbb17.css.map",
-    "main.3b042009.js.map": "/hw_ign/static/js/main.3b042009.js.map",
+    "main.1ec265f2.js.map": "/hw_ign/static/js/main.1ec265f2.js.map",
     "787.66cb4309.chunk.js.map": "/hw_ign/static/js/787.66cb4309.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.735dbb17.css",
-    "static/js/main.3b042009.js"
+    "static/js/main.1ec265f2.js"
   ]
 }
