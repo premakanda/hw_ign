@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/hw_ign/static/css/main.6f84c7dd.css",
-    "main.js": "/hw_ign/static/js/main.191f8307.js",
+    "main.css": "/hw_ign/static/css/main.988dacf2.css",
+    "main.js": "/hw_ign/static/js/main.3751a77d.js",
     "static/js/787.66cb4309.chunk.js": "/hw_ign/static/js/787.66cb4309.chunk.js",
     "static/media/checked.svg": "/hw_ign/static/media/checked.b75ca55e8759862b4083.svg",
     "index.html": "/hw_ign/index.html",
-    "main.6f84c7dd.css.map": "/hw_ign/static/css/main.6f84c7dd.css.map",
-    "main.191f8307.js.map": "/hw_ign/static/js/main.191f8307.js.map",
+    "main.988dacf2.css.map": "/hw_ign/static/css/main.988dacf2.css.map",
+    "main.3751a77d.js.map": "/hw_ign/static/js/main.3751a77d.js.map",
     "787.66cb4309.chunk.js.map": "/hw_ign/static/js/787.66cb4309.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6f84c7dd.css",
-    "static/js/main.191f8307.js"
+    "static/css/main.988dacf2.css",
+    "static/js/main.3751a77d.js"
   ]
 }
