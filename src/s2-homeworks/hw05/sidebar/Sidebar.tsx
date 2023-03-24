@@ -3,6 +3,7 @@ import {NavLink} from 'react-router-dom'
 import s from './Sidebar.module.css'
 import {PATH} from '../Pages'
 import closeIcon from './closeOutline.svg'
+import burgerIcon from '../header/burger.svg'
 
 type PropsType = {
     open: boolean
@@ -19,11 +20,18 @@ export const Sidebar: FC<PropsType> = ({open, handleClose}) => {
 
             <aside className={sidebarClass}>
                 <button className={s.close} onClick={handleClose}>
+                    {open ?
                     <img
                         src={closeIcon}
                         alt="close sidebar"
                         id={'hw5-menu-close'}
                     />
+                        : <img
+                            src={burgerIcon}
+                            alt="close sidebar"
+                            id={'hw5-menu-close'}
+                        />
+                    }
                 </button>
 
                 <nav id={'hw5-menu'} className={s.nav}>
@@ -31,6 +39,7 @@ export const Sidebar: FC<PropsType> = ({open, handleClose}) => {
                         id={'hw5-pre-junior-link'}
                         to={PATH.PRE_JUNIOR}
                         onClick={handleClose}
+                        className={({isActive})=>isActive ?s.active : s.navLink}
                         // className={...} // делает студент
                     >
                         Pre-junior
@@ -39,6 +48,7 @@ export const Sidebar: FC<PropsType> = ({open, handleClose}) => {
                         id={'hw5-junior-link'}
                         to={PATH.JUNIOR}
                         onClick={handleClose}
+                        className={({isActive})=>isActive ?s.active : s.navLink}
                         // className={...} // делает студент
                     >
                         Junior
@@ -47,6 +57,7 @@ export const Sidebar: FC<PropsType> = ({open, handleClose}) => {
                         id={'hw5-junior-plus-link'}
                         to={PATH.JUNIOR_PLUS}
                         onClick={handleClose}
+                        className={({isActive})=>isActive ?s.active : s.navLink}
                         // className={...} // делает студент
                     >
                         Junior Plus

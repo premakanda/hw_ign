@@ -1,4 +1,5 @@
 .sidebar {
+    display: flex;
 }
 
 .sidebar.open {
@@ -11,14 +12,22 @@
 }
 
 .nav a {
+    color: #0059b3;
+    font-weight: 700;
+    margin: 0 10px;
 }
 
 .nav a:hover {
 }
+.navLink {
+    color: #0059b3;
+}
 
 .nav a.active {
+    color: green;
 }
 .close {
+    /*display: none;*/
 }
 
 .close img {
