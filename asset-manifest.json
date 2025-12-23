@@ -1,15 +1,20 @@
 {
   "files": {
-    "main.css": "/hw_ign/static/css/main.e2a3d228.css",
-    "main.js": "/hw_ign/static/js/main.53aa5d10.js",
+    "main.css": "/hw_ign/static/css/main.fd2b16c0.css",
+    "main.js": "/hw_ign/static/js/main.e1db575c.js",
     "static/js/787.66cb4309.chunk.js": "/hw_ign/static/js/787.66cb4309.chunk.js",
+    "static/media/avatar.png": "/hw_ign/static/media/avatar.d947cb9d0d13765666b6.png",
+    "static/media/404.svg": "/hw_ign/static/media/404.dae7af4892f2a3abe805a174178919f2.svg",
+    "static/media/closeOutline.svg": "/hw_ign/static/media/closeOutline.91a6693133923612a0702421ab3e9923.svg",
+    "static/media/checked.svg": "/hw_ign/static/media/checked.0b6a1bcf5d417ff0a947.svg",
     "index.html": "/hw_ign/index.html",
-    "main.e2a3d228.css.map": "/hw_ign/static/css/main.e2a3d228.css.map",
-    "main.53aa5d10.js.map": "/hw_ign/static/js/main.53aa5d10.js.map",
+    "static/media/burger.svg": "/hw_ign/static/media/burger.e4e6b98e4ee0b2dfcd76d02a9eed2e34.svg",
+    "main.fd2b16c0.css.map": "/hw_ign/static/css/main.fd2b16c0.css.map",
+    "main.e1db575c.js.map": "/hw_ign/static/js/main.e1db575c.js.map",
     "787.66cb4309.chunk.js.map": "/hw_ign/static/js/787.66cb4309.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e2a3d228.css",
-    "static/js/main.53aa5d10.js"
+    "static/css/main.fd2b16c0.css",
+    "static/js/main.e1db575c.js"
   ]
 }
