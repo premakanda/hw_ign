@@ -1,14 +1,43 @@
 .buttonsContainer {
+    display: flex;
+    gap: 20px;
 }
 
 .clock {
+    padding: 50px;
+
 }
 
 .watch {
+    font-weight: 700;
+    font-size: 20;
+    padding: 10px 0;
 }
 
 .watch strong {
 }
 
 .more {
+    font-weight: 400;
+    font-size: 20;
+    padding: 15px 0;
+}
+
+.superButton {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: #fff;
+    background-color: blue;
+     text-transform: capitalize;
+}
+
+.superButton.disabled {
+    background-color: #4ca6f5;
+    cursor: not-allowed;
 }

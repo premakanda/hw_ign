@@ -73,6 +73,7 @@ function Clock() {
 
             <div className={s.buttonsContainer}>
                 <SuperButton
+                className={`${s.superButton} ${timerId ? s.disabled : s.enabled}`}
                     id={'hw9-button-start'}
                     disabled={!!timerId} // пишут студенты // задизэйблить если таймер запущен
                     onClick={start}
@@ -80,6 +81,7 @@ function Clock() {
                     start
                 </SuperButton>
                 <SuperButton
+                className={`${s.superButton} ${!timerId ? s.disabled : s.enabled}`}
                     id={'hw9-button-stop'}
                     disabled={!timerId} // пишут студенты // задизэйблить если таймер не запущен
                     onClick={stop}

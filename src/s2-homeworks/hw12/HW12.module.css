@@ -18,6 +18,29 @@ html {
     color: var(--color);
 }
 
-.select {
 
+#hw12 {
+    padding: 20px;
+}
+
+.select {
+    min-width: 200px;
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: 2px solid #667eea;
+    font-size: 16px;
+    cursor: pointer;
+    background: white;
+    color: #333;
+}
+
+.select:focus {
+    outline: none;
+    border-color: #764ba2;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.2);
+}
+
+
+#hw12-text {
+    color: var(--text-color, #000);
 }

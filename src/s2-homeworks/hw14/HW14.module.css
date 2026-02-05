@@ -5,3 +5,19 @@
 .loading {
 
 }
+
+.hw14 {
+    padding: 70px 0;
+}
+
+
+.input{
+     min-width: 200px;
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: 2px solid #667eea;
+    font-size: 16px;
+    cursor: pointer;
+    background: white;
+    color: #333;
+}

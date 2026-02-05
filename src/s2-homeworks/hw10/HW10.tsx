@@ -38,6 +38,18 @@ const HW10 = () => {
                     </div>
                 ) : (
                     <SuperButton
+
+                    style={{
+        background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+        color: 'white',
+        padding: '12px 24px',
+        border: 'none',
+        borderRadius: '8px',
+        fontSize: '16px',
+        cursor: 'pointer',
+        minWidth: '180px'
+    }}
+                        className={s2.btn}
                         id={'hw10-button-start-loading'}
                         onClick={setLoading}
                     >
