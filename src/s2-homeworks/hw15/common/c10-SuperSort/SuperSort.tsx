@@ -1,9 +1,12 @@
 import React from 'react'
+import downIcon from "../icon/dn.svg"
+import upIcon from "../icon/up.svg"
+import noneIcon from "../icon/mm.svg"
 
 // добавить в проект иконки и импортировать
-const downIcon = '[\\/]'
-const upIcon = '[/\\]'
-const noneIcon = '[--]'
+// const downIcon = '[\\/]'
+// const upIcon = '[/\\]'
+// const noneIcon = '[--]'
 
 export type SuperSortPropsType = {
     id?: string
@@ -14,7 +17,18 @@ export type SuperSortPropsType = {
 
 export const pureChange = (sort: string, down: string, up: string) => {
     // пишет студент, sort: (click) => down (click) => up (click) => '' (click) => down ...
-    return up // исправить
+   // return up // исправить
+   if (sort === down) {
+        return up
+    }
+    // Если текущая сортировка - up, сбрасываем сортировку
+    else if (sort === up) {
+        return ''
+    }
+    // Если сортировка не установлена, устанавливаем down
+    else {
+        return down
+    }
 }
 
 const SuperSort: React.FC<SuperSortPropsType> = (
@@ -40,15 +54,41 @@ const SuperSort: React.FC<SuperSortPropsType> = (
             id={id + '-sort-' + value}
             onClick={onChangeCallback}
         >
-            {/*сделать иконку*/}
-            {/*<img*/}
-            {/*    id={id + '-icon-' + sort}*/}
-            {/*    src={icon}*/}
-            {/*/>*/}
-
-            {icon} {/*а это убрать*/}
+        <img
+           id={id + '-icon-' + sort}
+             src={icon}
+             alt=""
+             width={'15px'}
+             height={"15px"}
+            />
         </span>
+        // <span
+        //     id={id + '-sort-' + value}
+        //     onClick={onChangeCallback}
+        // >
+        //  {/*сделать иконку*/}
+        //     {/*<img*/}
+        //     {/*    id={id + '-icon-' + sort}*/}
+        //     {/*    src={icon}*/}
+        //     {/*/>*/}
+
+            
+        //     {/*{icon} */}
+        //     {/*а это убрать*/}
+        // </span>
+        //      <span
+        //     id={id + '-sort-' + value}
+        //     onClick={onChangeCallback}
+        //     style={{cursor: 'pointer', marginLeft: '5px'}}
+        // >
+        //     {icon}
+        // </span>
+            //  {/*сделать иконку*/}
+           
+
     )
+           
+    
 }
 
 export default SuperSort

@@ -13,6 +13,17 @@ import SuperSort from './common/c10-SuperSort/SuperSort'
 * 3 - дописать sendQuery, onChangePagination, onChangeSort в HW15
 * 4 - сделать стили в соответствии с дизайном
 * 5 - добавить HW15 в HW5/pages/JuniorPlus
+* 
+* Состояние сайта при нажатии страницы 3 - крутилка поверх таблицы пока идёт запрос на бэк (так же она должна быть при смене количества элементов на странице и переключении сортировки):
+* 
+* Состояние сайта при нажатии на заголовок tech - появляется иконка направления сортировки:
+* 
+* Состояние сайта при втором нажатии на заголовок tech - появляется иконка противоположного направления сортировки:
+* 
+* Состояние сайта при третьем нажатии на заголовок tech - сортировка выключается:
+* 
+* Состояние сайта при выборе по 10 элементов:
+* 
 * */
 
 type TechType = {
@@ -51,15 +62,28 @@ const HW15 = () => {
         setLoading(true)
         getTechs(params)
             .then((res) => {
-                // делает студент
-
-                // сохранить пришедшие данные
-
-                //
+                if (res) {
+                    setTechs(res.data.techs)
+                    setTotalCount(res.data.totalCount)
+                }
+            })
+            .finally(() => {
+                setLoading(false)
             })
     }
 
     const onChangePagination = (newPage: number, newCount: number) => {
+        setPage(newPage)
+        setCount(newCount)
+        
+        sendQuery({sort, page: newPage, count: newCount})
+        
+        // Обновляем searchParams
+        const params: {[key: string]: string} = {}
+        if (sort) params.sort = sort
+        params.page = newPage.toString()
+        params.count = newCount.toString()
+        setSearchParams(params)
         // делает студент
 
         // setPage(
@@ -72,6 +96,18 @@ const HW15 = () => {
     }
 
     const onChangeSort = (newSort: string) => {
+       const updatedSort = newSort
+        setSort(updatedSort)
+        setPage(1)
+        
+        sendQuery({sort: updatedSort, page: 1, count})
+        
+        // Обновляем searchParams
+        const params: {[key: string]: string} = {}
+        if (updatedSort) params.sort = updatedSort
+        params.page = '1'
+        params.count = count.toString()
+        setSearchParams(params)
         // делает студент
 
         // setSort(
@@ -85,6 +121,7 @@ const HW15 = () => {
 
     useEffect(() => {
         const params = Object.fromEntries(searchParams)
+        console.log("params " , params)
         sendQuery({page: params.page, count: params.count})
         setPage(+params.page || 1)
         setCount(+params.count || 4)
@@ -107,7 +144,7 @@ const HW15 = () => {
             <div className={s2.hwTitle}>Homework #15</div>
 
             <div className={s2.hw}>
-                {idLoading && <div id={'hw15-loading'} className={s.loading}>Loading...</div>}
+                {idLoading && <div id={'hw15-loading'} className={s.loading}>Loading...<div className={s.loader}/></div>}
 
                 <SuperPagination
                     page={page}

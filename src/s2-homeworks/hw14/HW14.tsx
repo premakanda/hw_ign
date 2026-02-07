@@ -71,10 +71,10 @@ const HW14 = () => {
 
     useEffect(() => {
         const params = Object.fromEntries(searchParams)
-        if (params.find) {
+        // if (params.find) {
         sendQuery(params.find || '')
         setFind(params.find || '')
-        }
+        // }
     }, [])
 
     const mappedTechs = techs.map(t => (
