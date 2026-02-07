@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/hw_ign/static/css/main.f767beff.css",
-    "main.js": "/hw_ign/static/js/main.84834a51.js",
+    "main.js": "/hw_ign/static/js/main.279e6613.js",
     "static/js/787.66cb4309.chunk.js": "/hw_ign/static/js/787.66cb4309.chunk.js",
     "static/media/avatar.png": "/hw_ign/static/media/avatar.d947cb9d0d13765666b6.png",
     "static/media/200.svg": "/hw_ign/static/media/200.2b4de1542921864a6ecb8c3301ea4670.svg",
@@ -17,11 +17,11 @@
     "static/media/dn.svg": "/hw_ign/static/media/dn.aa1b56fad8fa8a6a846f2e08bc4695d8.svg",
     "static/media/up.svg": "/hw_ign/static/media/up.92416861546054d2ae15f376ada12ea7.svg",
     "main.f767beff.css.map": "/hw_ign/static/css/main.f767beff.css.map",
-    "main.84834a51.js.map": "/hw_ign/static/js/main.84834a51.js.map",
+    "main.279e6613.js.map": "/hw_ign/static/js/main.279e6613.js.map",
     "787.66cb4309.chunk.js.map": "/hw_ign/static/js/787.66cb4309.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f767beff.css",
-    "static/js/main.84834a51.js"
+    "static/js/main.279e6613.js"
   ]
 }
